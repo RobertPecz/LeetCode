@@ -6,10 +6,9 @@
     {
         public static void Main()
         {
-            int[] arr = {17,18,5,4,6,1};
-            int[] arr1 = {400};
-            ReplaceElementsSolution replaceElementsSolution = new ReplaceElementsSolution();
-            var a = replaceElementsSolution.ReplaceElements(arr1);
+            int[] arr = {3,1,2,4};
+            ArrayParitySolution arrayParitySolution = new ArrayParitySolution();
+            var a = arrayParitySolution.SortArrayByParity(arr);
         }
     }
 }
