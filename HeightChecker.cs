@@ -4,29 +4,36 @@ namespace LeetCode
     {
         //https://leetcode.com/explore/learn/card/fun-with-arrays/523/conclusion/3228/
 
-        //do a two pointer change and every swap increment an integer.
+        
         public int HeightChecker(int[] heights) 
         {
+            int[] tempCopiedHeights = new int[heights.Length];
+            Array.Copy(heights, tempCopiedHeights, heights.Length);
             int index = 0;
-            int tallestStudent = 1;
-            int[] orderedHeights = new int[heights.Length];
-            while(tallestStudent < heights.Length)
+            int tallest = index + 1;
+
+            while(index < tempCopiedHeights.Length)
             {
-                if(heights[index] > heights[tallestStudent])
+                if(tallest == tempCopiedHeights.Length)
                 {
-                    /*int temp = heights[index];
-                    heights[index] = heights[tallestStudent];
-                    heights[tallestStudent] = temp; */                
-                    orderedHeights[tallestStudent] = heights[tallestStudent];
-                    tallestStudent++;
+                    index++;
+                    tallest = index + 1;
+                }
+                else if(tempCopiedHeights[index] > tempCopiedHeights[tallest])
+                {
+                    int temp = tempCopiedHeights[index];
+                    tempCopiedHeights[index] = tempCopiedHeights[tallest];
+                    tempCopiedHeights[tallest] = temp;
+                    tallest++;
                 }
                 else
                 {
-                    orderedHeights[index] = heights[index];
-                    tallestStudent++;
+                    tallest++;
                 }
-
             }
+            /*{1,1,4,2,1,3};
+              {5,1,2,3,4};*/
+
             return 0;
         }
     }
