@@ -4,11 +4,12 @@
     {
         public static void Main()
         {
-            int[] arr = {1,1,4,2,1,3};
-            int[] arr1 = {5,1,2,3,4};
-            int[] arr2 = {1,2,3,4,5};
-            HeightCheckerSolution heightCheckerSolution = new HeightCheckerSolution();
-            var a = heightCheckerSolution.HeightChecker(arr2);
+            int[] arr = {4,3,2,7,8,2,3,1};
+            int[] arr1 = {2,2};
+            int[] arr2 = {10,2,5,10,9,1,1,4,3,7};
+            
+            FindDisappearedNumberSolution findDisappearedNumberSolution = new FindDisappearedNumberSolution();
+            var a = findDisappearedNumberSolution.FindDisappearedNumbers(arr2);
         }
     }
 }
