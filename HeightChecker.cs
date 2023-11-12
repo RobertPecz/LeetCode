@@ -11,6 +11,7 @@ namespace LeetCode
             Array.Copy(heights, tempCopiedHeights, heights.Length);
             int index = 0;
             int tallest = index + 1;
+            int notInPlace = 0;
 
             while(index < tempCopiedHeights.Length)
             {
@@ -31,10 +32,15 @@ namespace LeetCode
                     tallest++;
                 }
             }
-            /*{1,1,4,2,1,3};
-              {5,1,2,3,4};*/
+            for (int i = 0; i < heights.Length; i++)
+            {
+                if(heights[i] != tempCopiedHeights[i])
+                {
+                    notInPlace++;
+                }
+            }
 
-            return 0;
+            return notInPlace;
         }
     }
 }
