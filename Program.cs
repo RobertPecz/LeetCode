@@ -8,8 +8,8 @@
             int[] arr1 = {2,2};
             int[] arr2 = {10,2,5,10,9,1,1,4,3,7};
             
-            FindDisappearedNumberSolution findDisappearedNumberSolution = new FindDisappearedNumberSolution();
-            var a = findDisappearedNumberSolution.FindDisappearedNumbers(arr2);
+            ValidSudokuSolution validSudokuSolution = new ValidSudokuSolution();
+            validSudokuSolution.foo();
         }
     }
 }
