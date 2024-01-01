@@ -4,12 +4,29 @@
     {
         public static void Main()
         {
-            int[] arr = {4,3,2,7,8,2,3,1};
-            int[] arr1 = {2,2};
-            int[] arr2 = {10,2,5,10,9,1,1,4,3,7};
-            
+            int[][] sudoku = new int[][]
+            {
+                new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }
+            };
             ValidSudokuSolution validSudokuSolution = new ValidSudokuSolution();
-            validSudokuSolution.foo();
+
+            var row = validSudokuSolution.CheckSudokuRow(sudoku, 0);
+
+            Console.WriteLine("");
+
+            var column = validSudokuSolution.CheckSudokuColumn(sudoku, 0);
+
+            Console.WriteLine("");
+
+            var matrix = validSudokuSolution.CheckSudokuMatrix(sudoku, 0);
         }
     }
 }

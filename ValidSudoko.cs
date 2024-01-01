@@ -25,17 +25,41 @@ namespace LeetCode
         //If loop index == end number column => Start number row +=1 and index == start number row.
         //If start number row > end number row => end number row = start number row +2
         //If loop index == end number row and end number row == array.column.Length => start number column = end number row +1 and end number row: start number row+2row and end number column: start number row+2column.
-        public void foo()
+        public bool CheckSudokuRow(int[][] sudoku, int rowNumber)
         {
-            int[][] jagged_arr = new int[4][]; 
-            jagged_arr[0] = new int[] {1, 2, 3, 4}; 
-            jagged_arr[1] = new int[] {11, 34, 67}; 
-            jagged_arr[2] = new int[] {89, 23}; 
-            jagged_arr[3] = new int[] {0, 45, 78, 53, 99}; 
-            for (int i = 0; i < jagged_arr.Length; i++)
+            for (int i = 0; i < sudoku[rowNumber].Length; i++)
             {
-                Console.WriteLine(jagged_arr[i][0]);
+                Console.Write(sudoku[rowNumber][i]+ " ");
             }
+            return true;
+        }
+
+        public bool CheckSudokuColumn(int[][] sudoku, int columnNumber)
+        {
+            for (int i = 0; i < sudoku.Length; i++)
+            {
+                Console.Write(sudoku[i][columnNumber]+ " ");
+            }
+            return true;
+        }
+
+        //Put this in a for loop which is looping +3 every iteration until reach end of the matrix. 
+        //Use while loop, if row 7 new column, if row 7 and column jagged array 
+        //length -1 exit loop. 
+        public bool CheckSudokuMatrix(int[][] sudoku, int startNumberRow)
+        {
+            int endNumberRow = startNumberRow + 3;
+            int endNumberColumn = startNumberRow + 3;
+
+            for (int i = startNumberRow; i < endNumberColumn; i++)
+            {
+                for (int j = 0; j < endNumberRow; j++)
+                {
+                    Console.Write(sudoku[i][j]+ " ");
+                }
+                Console.WriteLine("");
+            }
+            return true;
         }
     }
 }
