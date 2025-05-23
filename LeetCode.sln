@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode", "LeetCode.csproj", "{03AEB703-1EC7-4CF1-A68D-B2CBB2438927}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode", "src\LeetCode.csproj", "{2F5B46BC-92AE-86EA-58FE-D862BB035AE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Tests", "tests\LeetCode.Tests.csproj", "{40B9977C-066E-4930-848E-FAB3D9F4106A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03AEB703-1EC7-4CF1-A68D-B2CBB2438927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03AEB703-1EC7-4CF1-A68D-B2CBB2438927}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03AEB703-1EC7-4CF1-A68D-B2CBB2438927}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03AEB703-1EC7-4CF1-A68D-B2CBB2438927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B9977C-066E-4930-848E-FAB3D9F4106A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B9977C-066E-4930-848E-FAB3D9F4106A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B9977C-066E-4930-848E-FAB3D9F4106A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B9977C-066E-4930-848E-FAB3D9F4106A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F5B46BC-92AE-86EA-58FE-D862BB035AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5B46BC-92AE-86EA-58FE-D862BB035AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5B46BC-92AE-86EA-58FE-D862BB035AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5B46BC-92AE-86EA-58FE-D862BB035AE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
