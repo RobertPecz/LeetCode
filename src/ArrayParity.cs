@@ -1,5 +1,6 @@
 namespace LeetCode
 {
+    //https://leetcode.com/problems/sort-array-by-parity/description/
     public class ArrayParitySolution
     {
         public int[] SortArrayByParity(int[] nums) 

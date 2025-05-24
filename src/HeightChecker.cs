@@ -1,10 +1,8 @@
 namespace LeetCode
 {
+    //https://leetcode.com/problems/height-checker/description/
     public class HeightCheckerSolution
     {
-        //https://leetcode.com/explore/learn/card/fun-with-arrays/523/conclusion/3228/
-
-        
         public int HeightChecker(int[] heights) 
         {
             int[] tempCopiedHeights = new int[heights.Length];

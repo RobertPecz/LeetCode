@@ -1,10 +1,10 @@
 namespace LeetCode
 {
+    //https://leetcode.com/problems/move-zeroes/description/
     public class MoveZeroesSolution
     {
         public void MoveZeroes(int[] nums) 
-        {
-            
+        {           
             for (int i = 0; i < nums.Length; i++)
             {
                 for (int j = i+1; j < nums.Length; j++)
