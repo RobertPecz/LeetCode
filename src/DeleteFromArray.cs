@@ -1,5 +1,6 @@
 namespace LeetCode
 {
+    //Problem not found
     public class DeleteArraySolution
     {
         public int Length { get; set; }

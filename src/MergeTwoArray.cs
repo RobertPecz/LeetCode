@@ -1,5 +1,6 @@
 namespace LeetCode
 {
+    //https://leetcode.com/problems/merge-sorted-array/description/
     public class MergeTwoArraySolution
     {
         public void Merge(int[] nums1, int m, int[] nums2, int n) 

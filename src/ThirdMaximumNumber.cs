@@ -1,5 +1,6 @@
 namespace LeetCode
 {
+    //https://leetcode.com/problems/third-maximum-number/description/
     public class ThirdMaximumSolution
     {
         public int ThirdMax(int[] nums)

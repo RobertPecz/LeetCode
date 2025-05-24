@@ -1,5 +1,6 @@
 namespace LeetCode
 {
+    //https://leetcode.com/problems/squares-of-a-sorted-array/description/
     public class SquareSortSolution 
     {
         public int[] SortedSquares(int[] nums) 

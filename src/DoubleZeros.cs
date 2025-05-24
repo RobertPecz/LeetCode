@@ -1,6 +1,6 @@
 namespace LeetCode
 {
-    //1, 0, 2, 3, 0, 4, 5, 0
+    //https://leetcode.com/problems/duplicate-zeros/
     public class DoubleZerosSolution
     {
         public void DoubleZero(int[] inputArray)

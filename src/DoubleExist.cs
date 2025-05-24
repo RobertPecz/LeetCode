@@ -1,6 +1,6 @@
-
 namespace LeetCode
 {
+    //https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
     public class DoubleExistSolution
     {
         public bool CheckIfExist(int[] arr) 

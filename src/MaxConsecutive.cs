@@ -1,5 +1,6 @@
 namespace LeetCode
 {
+    //https://leetcode.com/problems/max-consecutive-ones/description/
     public class MaxConsSolution
     {
         public int FindMaxConsecutiveOnes(int[] nums) 

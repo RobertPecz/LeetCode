@@ -1,5 +1,6 @@
 namespace LeetCode
 {
+    //https://leetcode.com/problems/valid-mountain-array/description/
     public class MountainArraySolution
     {
         public bool ValidMountainArray(int[] arr) 
