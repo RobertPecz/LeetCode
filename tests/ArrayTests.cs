@@ -2,7 +2,7 @@ using LeetCode;
 
 namespace LeetCodeTests
 {
-    public class Tests
+    public class ArrayTests
     {
         [SetUp]
         public void Setup()
@@ -10,7 +10,7 @@ namespace LeetCodeTests
         }
 
         [Test]
-        public void Test1()
+        public void TwoSumsSolution()
         {
             TwoSumsSolution solution = new TwoSumsSolution();
             var elements = solution.TwoSum(new int[] { 2, 7, 11, 15 }, 9);
