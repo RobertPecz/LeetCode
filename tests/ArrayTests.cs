@@ -86,5 +86,31 @@ namespace LeetCodeTests
             MountainArraySolution mountainArraySolution = new MountainArraySolution();
             return mountainArraySolution.ValidMountainArray(nums);
         }
+
+        [TestCase(new int[] { 0, 1, 0, 3, 12 })]
+        public void MoveZeroesSolutionTests(int[] nums)
+        {
+            MoveZeroesSolution moveZeroesSolution = new MoveZeroesSolution();
+            moveZeroesSolution.MoveZeroes(nums);
+            var testArray = new int[] { 1, 3, 12, 0, 0 };
+            var isTheTwoArrayHasTheSameElements = nums.SequenceEqual(testArray);
+        }
+
+        [TestCase(new int[] { -4, -1, 0, 3, 10 }, ExpectedResult = new int[] { 0, 1, 9, 16, 100 })]
+        [TestCase(new int[] { -7, -3, 2, 3, 11 }, ExpectedResult = new int[] { 4, 9, 9, 49, 121 })]
+        public int[] SquareSortSolutionTests(int[] nums)
+        {
+            SquareSortSolution squareSortSolution = new SquareSortSolution();
+            return squareSortSolution.SortedSquares(nums);
+        }
+
+        [TestCase(new int[] { 3, 2, 1 }, ExpectedResult = 1)]
+        [TestCase(new int[] { 1, 2 }, ExpectedResult = 2)]
+        [TestCase(new int[] { 2, 2, 3, 1 }, ExpectedResult = 1)]
+        public int ThirdMaximumSolutionTests(int[] nums)
+        {
+            ThirdMaximumSolution thirdMaximumSolution = new ThirdMaximumSolution();
+            return thirdMaximumSolution.ThirdMax(nums);
+        }
     }
 }

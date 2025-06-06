@@ -1,6 +1,5 @@
 namespace LeetCode
 {
-    //https://leetcode.com/problems/remove-element/description/
     public class ReplaceElementsSolution
     {
         public int[] ReplaceElements(int[] arr) 
