@@ -11,7 +11,7 @@ namespace LeetCode
             {
                 return new int[] { 0, 1 };
             }
-            while(index < nums.Length / 2)
+            while(index < nums.Length)
             {
                 if(jndex == nums.Length)
                 {
