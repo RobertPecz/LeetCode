@@ -143,5 +143,13 @@ namespace LeetCode.Tests
         {
             Assert.That(new TwoSumsSolution().TwoSum(new[] { 2, 7, 11, 15 }, 9), Is.EqualTo(new[] { 0, 1 }));
         }
+
+        [TestCase(99, true)]
+        [TestCase(23, false)]
+        [TestCase(17190, true)]
+        public void CheckDivisibility(int n, bool result)
+        {
+            Assert.That(new CheckDivisibilityByDigitSumAndProduct().CheckDivisibility(n), Is.EqualTo(result));
+        }
     }
 }
